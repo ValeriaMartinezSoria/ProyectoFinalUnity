@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using TMPro;
 
+
 public class CodeLock3D : MonoBehaviour
 {
     public TextMeshPro displayText;
@@ -9,9 +10,15 @@ public class CodeLock3D : MonoBehaviour
     private string input = "";
 
     public GameObject door;
+    public AudioSource audioSource;
+
+    public AudioClip buttonSound;
+    public AudioClip correctSound;
+    public AudioClip wrongSound;
 
     public void PressButton(string value)
     {
+        audioSource.PlayOneShot(buttonSound);
         if (value == "C")
         {
             input = "";
@@ -37,11 +44,13 @@ public class CodeLock3D : MonoBehaviour
 
         if (input == correctCode)
         {
+            audioSource.PlayOneShot(correctSound);
             Debug.Log("Código correcto");
             OpenDoor();
         }
         else
         {
+            audioSource.PlayOneShot(wrongSound);
             Debug.Log("Código incorrecto");
             input = "";
             displayText.text = "";
