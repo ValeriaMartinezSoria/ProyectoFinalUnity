@@ -675,6 +675,11 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!82 &181817811 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 401274574900591829, guid: 65cff3327d440d642a22a3a01f6fa62b, type: 3}
+  m_PrefabInstance: {fileID: 1032391671}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &201451226 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 504986176034068842, guid: 2ccc57afa5aa7074ca1c575c2a52d546, type: 3}
@@ -3579,10 +3584,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 401274574900591829, guid: 65cff3327d440d642a22a3a01f6fa62b, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: c40e3e2c4c0e65144a3c42a1e0e68ab6, type: 3}
     - target: {fileID: 2852097685687199748, guid: 65cff3327d440d642a22a3a01f6fa62b, type: 3}
       propertyPath: textDialog
       value: 
       objectReference: {fileID: 698026334}
+    - target: {fileID: 2852097685687199748, guid: 65cff3327d440d642a22a3a01f6fa62b, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 181817811}
     - target: {fileID: 2852097685687199748, guid: 65cff3327d440d642a22a3a01f6fa62b, type: 3}
       propertyPath: panelDialog
       value: 
