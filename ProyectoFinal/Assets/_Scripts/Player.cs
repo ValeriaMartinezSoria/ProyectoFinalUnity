@@ -7,22 +7,12 @@ public class Player : MonoBehaviour
 
     private Vector2 inputMovimiento;
     private Rigidbody rb;
-    private bool isGrounded;
+    public Animator animator;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.useGravity = true;
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        isGrounded = true;
-    }
-
-    private void OnCollisionExit(Collision collision)
-    {
-        isGrounded = false;
     }
 
     void OnMove(InputValue value)
@@ -32,13 +22,16 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        MoverJugador();
+        MovePlayer();
     }
 
-    public void MoverJugador()
+    public void MovePlayer()
     {
         Vector3 direccion = transform.right * inputMovimiento.x + transform.forward * inputMovimiento.y;
-
         rb.linearVelocity = new Vector3(direccion.x * velocidad, rb.linearVelocity.y, direccion.z * velocidad);
+
+        float velocidadHorizontal = new Vector2(rb.linearVelocity.x, rb.linearVelocity.z).magnitude;
+
+        animator.SetFloat("Speed", velocidadHorizontal);
     }
 }
