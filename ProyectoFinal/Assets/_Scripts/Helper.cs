@@ -1,4 +1,5 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,23 +7,31 @@ public class Helper : MonoBehaviour
 {
     public string mensaje = "Hola estudiante, tu misión es ...";
 
-    public GameObject textoInteraccion;  
-    public GameObject panelDialogo;       
-    public TMP_Text textoDialogo;         
+    public GameObject textInteraction;  
+    public GameObject panelDialog;       
+    public TMP_Text textDialog;         
 
     public AudioSource audioSource;      
 
-    private bool jugadorCerca = false;
-    private bool hablando = false;
+    public Animator animator;
+
+    private bool playerNear = false;
+    private bool talking = false;
 
     void Update()
     {
-        if (jugadorCerca && Keyboard.current.eKey.wasPressedThisFrame)
+        if (playerNear && Keyboard.current.eKey.wasPressedThisFrame)
         {
-            if (!hablando)
-                IniciarDialogo();
+            if (!talking)
+            {
+                StartTalking();
+                animator.SetBool("IsTalking", true);
+            }
             else
-                TerminarDialogo();
+            {
+                FinishTalking();
+                animator.SetBool("IsTalking", false);
+            }
         }
     }
 
@@ -30,8 +39,8 @@ public class Helper : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            jugadorCerca = true;
-            textoInteraccion.SetActive(true);
+            playerNear = true;
+            textInteraction.SetActive(true);
         }
     }
 
@@ -39,32 +48,35 @@ public class Helper : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            jugadorCerca = false;
-            textoInteraccion.SetActive(false);
+            playerNear = false;
+            textInteraction.SetActive(false);
 
-            if (hablando)
-                TerminarDialogo();
+            if (talking)
+            {
+                FinishTalking();
+                animator.SetBool("IsTalking", false);
+            }
         }
     }
 
-    void IniciarDialogo()
+    void StartTalking()
     {
-        hablando = true;
-        textoInteraccion.SetActive(false);
-        panelDialogo.SetActive(true);
-        textoDialogo.text = mensaje;
+        talking = true;
+        textInteraction.SetActive(false);
+        panelDialog.SetActive(true);
+        textDialog.text = mensaje;
 
         if (audioSource != null)
             audioSource.Play();
     }
 
-    void TerminarDialogo()
+    void FinishTalking()
     {
-        hablando = false;
-        panelDialogo.SetActive(false);
+        talking = false;
+        panelDialog.SetActive(false);
 
-        if (jugadorCerca)
-            textoInteraccion.SetActive(true);
+        if (playerNear)
+            textInteraction.SetActive(true);
 
         if (audioSource != null)
             audioSource.Stop();
