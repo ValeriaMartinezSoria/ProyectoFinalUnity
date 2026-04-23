@@ -11,8 +11,9 @@ public class PlayerLook : MonoBehaviour
 
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        //Tenemos que ver esto porque sino el mouse gira y no me deja hacer click en el panel
     }
 
     void Update()

@@ -12,15 +12,15 @@ public class Helper : MonoBehaviour
     public TMP_Text textDialog;         
 
     public AudioSource audioSource;      
-
     public Animator animator;
+    public InputActionReference interactAction;
 
     private bool playerNear = false;
     private bool talking = false;
 
     void Update()
     {
-        if (playerNear && Keyboard.current.eKey.wasPressedThisFrame)
+        if (playerNear && interactAction.action.WasPressedThisFrame())
         {
             if (!talking)
             {
