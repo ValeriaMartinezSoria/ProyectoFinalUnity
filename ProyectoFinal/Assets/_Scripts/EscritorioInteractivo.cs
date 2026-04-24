@@ -1,10 +1,15 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EscritorioInteractivo : MonoBehaviour
 {
+    [Header("Rotación")]
     public float velocidad = 2f;
     private bool girando = false;
     private Quaternion rotacionObjetivo;
+
+    [Header("Sonido")]
+    public AudioSource audioSource;
+    private bool yaSonó = false;
 
     void Update()
     {
@@ -16,7 +21,6 @@ public class EscritorioInteractivo : MonoBehaviour
                 velocidad * Time.deltaTime
             );
 
-            // Cuando ya casi termin� de girar
             if (Quaternion.Angle(transform.rotation, rotacionObjetivo) < 1f)
             {
                 girando = false;
@@ -28,7 +32,6 @@ public class EscritorioInteractivo : MonoBehaviour
     {
         if (!girando)
         {
-            // Gira 180 grados
             rotacionObjetivo = Quaternion.Euler(0, transform.eulerAngles.y + 180f, 0);
             girando = true;
         }
@@ -37,5 +40,22 @@ public class EscritorioInteractivo : MonoBehaviour
     void OnMouseDown()
     {
         GirarEscritorio();
+    }
+
+    // 🔊 Detectar cercanía
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            audioSource.Play();
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            audioSource.Stop();
+        }
     }
 }
