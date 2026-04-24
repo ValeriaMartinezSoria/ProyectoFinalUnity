@@ -6,7 +6,7 @@ public class GameTimer : MonoBehaviour
     public TMP_Text textTimer;
     
     private string loseScene = "LoseScene";
-    private float totalTime = 60f;
+    private float totalTime = 120f;
     private float timeRemaining;
     private bool timerEnds = false;
 
