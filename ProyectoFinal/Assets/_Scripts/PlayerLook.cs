@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerLook : MonoBehaviour
 {
-    public float mouseSensitivity = 150f;
+    public float mouseSensitivity = 50f;
     public Transform playerCamera;
 
     private float xRotation = 0f;
@@ -13,7 +13,6 @@ public class PlayerLook : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        //Tenemos que ver esto porque sino el mouse gira y no me deja hacer click en el panel
     }
 
     void Update()
