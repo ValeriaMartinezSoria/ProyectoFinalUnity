@@ -8,6 +8,7 @@ public class CodeLock3D : MonoBehaviour
     public string correctCode = "2580";
 
     private string input = "";
+    private string winScene = "WinScene";
 
     public GameObject door;
     public AudioSource audioSource;
@@ -60,5 +61,6 @@ public class CodeLock3D : MonoBehaviour
     void OpenDoor()
     {
         door.SetActive(false);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(winScene);
     }
 }

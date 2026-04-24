@@ -4,8 +4,8 @@ using UnityEngine;
 public class GameTimer : MonoBehaviour
 {
     public TMP_Text textTimer;
-    public string loseScene = "LoseScene";
-
+    
+    private string loseScene = "LoseScene";
     private float totalTime = 60f;
     private float timeRemaining;
     private bool timerEnds = false;
