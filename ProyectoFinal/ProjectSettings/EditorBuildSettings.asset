@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/_Scenes/Nivel1_Aula.unity
     guid: c6039189e3d80464296dd5a1c1c74876
   - enabled: 1
-    path: Assets/_Scenes/Nivel2_Cafeteria.unity
+    path: Assets/_Scenes/Base/Nivel2_Cafeteria.unity
     guid: 8d1109564a68bd44e86d2ae552a68d9a
   - enabled: 1
     path: Assets/_Scenes/WinScene.unity

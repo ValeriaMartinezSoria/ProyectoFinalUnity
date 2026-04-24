@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerLook : MonoBehaviour
 {
-    public float mouseSensitivity = 50f;
+    public float mouseSensitivity = 30f;
     public Transform playerCamera;
 
     private float xRotation = 0f;
