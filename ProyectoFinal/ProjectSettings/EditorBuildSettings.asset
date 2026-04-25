@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/_Scenes/PrincipalScene.unity
     guid: dc21cbb1537170d40ad8db54daf6c668
   - enabled: 1
-    path: Assets/_Scenes/Nivel1_Aula.unity
+    path: Assets/_Scenes/Base/Nivel1_Aula.unity
     guid: c6039189e3d80464296dd5a1c1c74876
   - enabled: 1
     path: Assets/_Scenes/Base/Nivel2_Cafeteria.unity

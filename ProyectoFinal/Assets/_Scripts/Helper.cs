@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 
 public class Helper : MonoBehaviour
 {
-    public string mensaje = "Hola estudiante, tu misión es ...";
+    public string mensaje = "Hola estudiante, tu misión es buscar pistas para salir del aula";
     public GameObject textInteraction;
     public GameObject panelDialog;
     public TMP_Text textDialog;
