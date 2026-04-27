@@ -6,10 +6,14 @@ public class PlayerLook : MonoBehaviour
     public float mouseSensitivity = 30f;
     public Transform playerCamera;
     public InputActionReference lockCursorAction;
+    public Transform doorCode;
 
     private float xRotation = 0f;
     private Vector2 mouseInput;
     private bool cursorLocked = true;
+
+    private Quaternion playerRotateOriginal;
+    private Quaternion camRotateOriginal;
 
     void OnEnable()
     {
@@ -68,6 +72,15 @@ public class PlayerLook : MonoBehaviour
         Cursor.visible = true;
         cursorLocked = false;
         mouseInput = Vector2.zero;
+
+        transform.rotation = playerRotateOriginal;
+        playerCamera.localRotation = camRotateOriginal;
+
+        if (doorCode != null)
+        {
+            LookDoorCode();
+        }
+
     }
 
     public void LockCursor()
@@ -76,7 +89,31 @@ public class PlayerLook : MonoBehaviour
         Cursor.visible = false;
         cursorLocked = true;
         mouseInput = Vector2.zero;
+
+        playerRotateOriginal = transform.rotation;
+        camRotateOriginal = playerCamera.rotation;
+
         
+    }
+
+    void LookDoorCode()
+    {
+        // Dirección del jugador al keypad
+        Vector3 direccion = doorCode.position - transform.position;
+
+        Debug.Log("Player pos: " + transform.position);
+        Debug.Log("DoorCode pos: " + doorCode.position);
+        Debug.Log("Direccion: " + direccion);
+
+        // Rotación horizontal del player (solo eje Y)
+        Vector3 direccionHorizontal = new Vector3(direccion.x, 0f, direccion.z);
+        if (direccionHorizontal.sqrMagnitude > 0.001f)
+            transform.rotation = Quaternion.LookRotation(direccionHorizontal);
+
+        // Rotación vertical de la cámara (eje X local)
+        Vector3 direccionLocal = transform.InverseTransformDirection(direccion);
+        float anguloVertical = -Mathf.Atan2(direccionLocal.y, direccionLocal.z) * Mathf.Rad2Deg;
+        playerCamera.localRotation = Quaternion.Euler(anguloVertical, 0f, 0f);
     }
 
 
