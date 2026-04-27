@@ -12,9 +12,12 @@ EditorBuildSettings:
     path: Assets/_Scenes/PrincipalScene.unity
     guid: dc21cbb1537170d40ad8db54daf6c668
   - enabled: 1
+    path: Assets/_Scenes/All.unity
+    guid: 3a7550861270fff4c9255c4dce8c6cc6
+  - enabled: 1
     path: Assets/_Scenes/Base/Nivel1_Aula.unity
     guid: c6039189e3d80464296dd5a1c1c74876
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/Base/Nivel2_Cafeteria.unity
     guid: 8d1109564a68bd44e86d2ae552a68d9a
   - enabled: 1

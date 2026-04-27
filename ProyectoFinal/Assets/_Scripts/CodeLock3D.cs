@@ -6,6 +6,7 @@ public class CodeLock3D : MonoBehaviour
 {
     public TextMeshPro displayText;
     public string correctCode = "2580";
+    public bool isLocked = false;
 
     private string input = "";
 
@@ -15,9 +16,15 @@ public class CodeLock3D : MonoBehaviour
     public AudioClip buttonSound;
     public AudioClip correctSound;
     public AudioClip wrongSound;
+    
 
     public void PressButton(string value)
     {
+        if (isLocked) 
+        {  
+            return; 
+        }    
+
         audioSource.PlayOneShot(buttonSound);
         if (value == "C")
         {
@@ -30,7 +37,7 @@ public class CodeLock3D : MonoBehaviour
         }
         else
         {
-            if (input.Length < 6)
+            if (input.Length < 4)
                 input += value;
         }
 
@@ -46,6 +53,7 @@ public class CodeLock3D : MonoBehaviour
         {
             audioSource.PlayOneShot(correctSound);
             Debug.Log("Código correcto");
+            isLocked = true;
             OpenDoor();
         }
         else
