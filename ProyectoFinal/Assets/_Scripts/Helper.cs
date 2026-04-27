@@ -5,15 +5,14 @@ using UnityEngine.InputSystem;
 public class Helper : MonoBehaviour
 {
     public string mensaje = "Hola estudiante, tu misión es buscar pistas para salir del aula";
+    public float velocidadRotacion = 5f;
+
     public GameObject textInteraction;
     public GameObject panelDialog;
     public TMP_Text textDialog;
     public AudioSource audioSource;
     public Animator animator;
     public InputActionReference interactAction;
-
-    [Header("Mirar al jugador")]
-    public float velocidadRotacion = 5f;
 
     private bool playerNear = false;
     private bool talking = false;

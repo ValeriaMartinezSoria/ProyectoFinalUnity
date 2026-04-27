@@ -98,19 +98,12 @@ public class PlayerLook : MonoBehaviour
 
     void LookDoorCode()
     {
-        // Dirección del jugador al keypad
         Vector3 direccion = doorCode.position - transform.position;
 
-        Debug.Log("Player pos: " + transform.position);
-        Debug.Log("DoorCode pos: " + doorCode.position);
-        Debug.Log("Direccion: " + direccion);
-
-        // Rotación horizontal del player (solo eje Y)
         Vector3 direccionHorizontal = new Vector3(direccion.x, 0f, direccion.z);
         if (direccionHorizontal.sqrMagnitude > 0.001f)
             transform.rotation = Quaternion.LookRotation(direccionHorizontal);
 
-        // Rotación vertical de la cámara (eje X local)
         Vector3 direccionLocal = transform.InverseTransformDirection(direccion);
         float anguloVertical = -Mathf.Atan2(direccionLocal.y, direccionLocal.z) * Mathf.Rad2Deg;
         playerCamera.localRotation = Quaternion.Euler(anguloVertical, 0f, 0f);
