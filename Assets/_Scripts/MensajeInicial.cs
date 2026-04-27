@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using TMPro;
 
@@ -10,10 +10,10 @@ public class MensajeInicial : MonoBehaviour
     [Header("Contenido")]
     [TextArea]
     public string mensaje =
-    "> EL TIEMPO CORRE...\n> ENCUENTRA EL C�DIGO DE 4 D�GITOS";
+    "> EL TIEMPO CORRE...\n> ENCUENTRA EL CÓDIGO DE 4 DÍGITOS";
 
-    [Header("Configuraci�n")]
-    public float typingSpeed = 0.10f;
+    [Header("Configuración")]
+    public float typingSpeed = 0.08f; // velocidad base
     public float duracionEnPantalla = 5f;
 
     [Header("Audio")]
@@ -32,7 +32,8 @@ public class MensajeInicial : MonoBehaviour
 
         yield return new WaitForSeconds(duracionEnPantalla);
 
-        texto.text = "";
+        if (texto != null)
+            texto.text = "";
     }
 
     IEnumerator TypeText(TextMeshProUGUI textoUI, string contenido)
@@ -43,12 +44,21 @@ public class MensajeInicial : MonoBehaviour
         {
             textoUI.text += letra;
 
+            // 🔊 sonido
             if (typingSound != null && audioSource != null)
             {
                 audioSource.PlayOneShot(typingSound, 0.2f);
             }
 
-            yield return new WaitForSeconds(typingSpeed);
+            // ⏱️ pausas inteligentes
+            if (letra == '.' || letra == '\n')
+            {
+                yield return new WaitForSeconds(0.4f); // pausa dramática
+            }
+            else
+            {
+                yield return new WaitForSeconds(typingSpeed);
+            }
         }
     }
 }

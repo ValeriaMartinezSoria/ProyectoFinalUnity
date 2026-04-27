@@ -1,22 +1,28 @@
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
 public class GameTimer : MonoBehaviour
 {
     public TMP_Text textTimer;
-    
+
     private string loseScene = "LoseScene";
     private float totalTime = 180f;
     private float timeRemaining;
     private bool timerEnds = false;
 
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip sonidoFinal;
+    private bool sonidoYaSonado = false;
+
     void Start()
     {
         timeRemaining = totalTime;
     }
+
     void Update()
     {
-        if (timerEnds) 
+        if (timerEnds)
         {
             return;
         }
@@ -32,15 +38,25 @@ public class GameTimer : MonoBehaviour
 
         UpdateTime();
 
+        // 🔥 ACTIVAR SONIDO UNA SOLA VEZ
+        if (timeRemaining <= 30f && !sonidoYaSonado)
+        {
+            if (audioSource != null && sonidoFinal != null)
+            {
+                audioSource.PlayOneShot(sonidoFinal);
+            }
+
+            sonidoYaSonado = true;
+        }
     }
 
-    void UpdateTime() 
+    void UpdateTime()
     {
         int minutes = Mathf.FloorToInt(timeRemaining / 60f);
         int seconds = Mathf.FloorToInt(timeRemaining % 60f);
         textTimer.text = string.Format("{0:00}:{1:00}", minutes, seconds);
 
-        if (timeRemaining <= 30f)
+        if (timeRemaining <= 25f)
         {
             textTimer.color = Color.red;
         }
