@@ -5,6 +5,6 @@ public class JugarAhora : MonoBehaviour
 {
     public void EmpezarJuego()
     {
-        SceneManager.LoadScene("Nivel1_Aula");
+        SceneManager.LoadScene("All");
     }
 }
