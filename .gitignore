@@ -5,3 +5,10 @@ Temp/
 UserSettings/ 
 Packages/ 
 ProjectSettings/ 
+
+# Visual Studio / IDE
+.vs/
+*.csproj
+*.sln
+obj/
+
