@@ -72,8 +72,10 @@ public class Clue : MonoBehaviour
         {
             textInteraction.SetActive(true);
             TMPro.TMP_Text tmp = textInteraction.GetComponent<TMPro.TMP_Text>();
-            if (tmp != null)
-                tmp.text = mostrando ? textoPromptOcultar : textoPromptVer;
+            if (mostrando)
+                tmp.text = textoPromptOcultar;
+            else
+                tmp.text = textoPromptVer;
         }
         else
         {
