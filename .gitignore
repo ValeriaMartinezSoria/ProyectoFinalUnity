@@ -1,1 +1,7 @@
 Library/ 
+Library/ 
+Logs/ 
+Temp/ 
+UserSettings/ 
+Packages/ 
+ProjectSettings/ 
