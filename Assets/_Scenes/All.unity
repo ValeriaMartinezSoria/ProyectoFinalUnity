@@ -2306,7 +2306,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4574124760409694, guid: cd74bf6cea4234840b01646a5b3f339a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.237
+      value: 10.138
       objectReference: {fileID: 0}
     - target: {fileID: 4574124760409694, guid: cd74bf6cea4234840b01646a5b3f339a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11066,7 +11066,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameTimer
   textTimer: {fileID: 650059801}
   audioSource: {fileID: 1221152215}
-  sonidoFinal: {fileID: 8300000, guid: 4564b5849db3a334681885ed0764a940, type: 3}
+  sonidoFinal: {fileID: 8300000, guid: d0b456779bed5fc40b55625392b4f5ac, type: 3}
 --- !u!1 &859823558
 GameObject:
   m_ObjectHideFlags: 0
@@ -20414,6 +20414,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1637596883}
     - target: {fileID: 1795369787408681669, guid: 7ffa300b9f119a346b356a67d855321e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795369787408681669, guid: 7ffa300b9f119a346b356a67d855321e, type: 3}
       propertyPath: viewClueAction
       value: 
       objectReference: {fileID: 4932926644359931664, guid: 052faaac586de48259a63d0c4782560b, type: 3}
@@ -20541,7 +20545,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 89.988
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1795369787408681669, guid: 7ffa300b9f119a346b356a67d855321e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
