@@ -1,4 +1,4 @@
-# 🎮 Proyecto Final Unity - Escape Room 3D
+#  Proyecto Final Unity - Escape Room 3D
 
 ![Unity](https://img.shields.io/badge/Unity-2022%2B-black?style=flat&logo=unity)
 ![C#](https://img.shields.io/badge/C%23-Programming-blue?style=flat&logo=c-sharp)
@@ -7,18 +7,18 @@ Un juego 3D interactivo desarrollado en Unity donde el jugador tiene el objetivo
 
 ---
 
-## 🚀 Características Principales (Core Features)
+##  Características Principales (Core Features)
 
-### 🎬 Flujo de Juego Completo (Core Loop)
+###  Flujo de Juego Completo (Core Loop)
 Transiciones fluidas entre escenas. Comienza con una cinemática de introducción, Menú Principal, Gameplay y desenlaces de Victoria o Derrota.
 
-### 🏃 Movimiento Físico del Jugador
+###  Movimiento Físico del Jugador
 Sistema de movimiento controlando un Rigidbody usando el nuevo Input System de Unity. Incluye mecánicas para caminar, correr (sprint) y saltar.
 
-### ⏳ Sistema de Tiempo (Game Timer)
+###  Sistema de Tiempo (Game Timer)
 Un temporizador regresivo añade tensión al juego. Si el tiempo llega a cero, el jugador pierde y es enviado a la escena de Derrota.
 
-### 🖐️ Mecánicas de Interacción
+###  Mecánicas de Interacción
 - Exploración de pistas en el entorno  
 - Puertas interactivas con sistema de rotación fluida (`Quaternion.Slerp`)  
 - Teclado numérico 3D funcional (`CodeLock3D`) para introducir la contraseña  
@@ -30,7 +30,7 @@ Un temporizador regresivo añade tensión al juego. Si el tiempo llega a cero, e
 
 ---
 
-## 🕹️ Controles
+##  Controles
 
 La configuración de controles utiliza el nuevo Input System de Unity:
 
@@ -45,35 +45,35 @@ La configuración de controles utiliza el nuevo Input System de Unity:
 
 ---
 
-## 📂 Arquitectura del Proyecto
+##  Arquitectura del Proyecto
 
 El código está estructurado de manera modular en `Assets/_Scripts`:
 
-### 🏃 Jugador
+###  Jugador
 - `Player.cs` (Movimiento y físicas)  
 - `PlayerLook.cs` (Control de cámara)  
 
-### 🧠 Lógica Base
+###  Lógica Base
 - `GameTimer.cs` (Gestión del tiempo y derrota)  
 - `CodeLock3D.cs`, `KeypadButton.cs` (Sistema de contraseñas)  
 - `VolverAJugar.cs`, `JugarAhora.cs` (Gestión de escenas)  
 
-### 🖐️ Entorno Interactivo
+###  Entorno Interactivo
 - `InteractiveDoor.cs` (Puertas)  
 - `Clue.cs` (Pistas)  
 - `EscritorioInteractivo.cs` (Muebles interactivos)  
 
-### 🤖 NPCs
+###  NPCs
 - `Helper.cs` (Misiones y rotación dinámica)  
 - `Npc.cs` (Navegación inteligente)  
 
-### 🎬 UI / Cinemáticas
+###  UI / Cinemáticas
 - `IntroVideo.cs`  
 - `MensajeInicial.cs`  
 
 ---
 
-## 🗺️ Estructura de Escenas
+##  Estructura de Escenas
 
 1. **IntroScene**: Cinemática de inicio del juego  
 2. **PrincipalScene**: Menú principal con opciones para jugar y ajustes  
@@ -83,7 +83,7 @@ El código está estructurado de manera modular en `Assets/_Scripts`:
 
 ---
 
-## 🛠️ Instalación y Uso
+##  Instalación y Uso
 
 1. Clona el repositorio:
    ```bash
