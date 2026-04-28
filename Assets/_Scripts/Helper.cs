@@ -6,6 +6,7 @@ public class Helper : MonoBehaviour
 {
     public string mensaje = "Hola estudiante, tu misión es buscar pistas para salir del aula";
     public float velocidadRotacion = 5f;
+    public string interaction = "Prresiona E para hablar";
 
     public GameObject textInteraction;
     public GameObject panelDialog;
@@ -43,7 +44,7 @@ public class Helper : MonoBehaviour
     void MirarAlJugador()
     {
         Vector3 direccion = player.position - transform.position;
-        direccion.y = 0f; 
+        direccion.y = 0f;
 
         if (direccion.sqrMagnitude > 0.001f)
         {
@@ -57,7 +58,11 @@ public class Helper : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerNear = true;
-            player = other.transform;  
+            player = other.transform;
+
+            TMPro.TMP_Text tmp = textInteraction.GetComponent<TMPro.TMP_Text>();
+            tmp.text = interaction;
+
             textInteraction.SetActive(true);
         }
     }
@@ -67,7 +72,7 @@ public class Helper : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerNear = false;
-            player = null;  
+            player = null;
             textInteraction.SetActive(false);
             if (talking)
             {
