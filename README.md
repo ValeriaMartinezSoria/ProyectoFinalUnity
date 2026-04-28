@@ -24,7 +24,7 @@ Un temporizador regresivo añade tensión al juego. Si el tiempo llega a cero, e
 - Teclado numérico 3D funcional (`CodeLock3D`) para introducir la contraseña  
 - Objetos interactivos como escritorios y elementos que reaccionan al jugador  
 
-### 🤖 NPCs e Inteligencia Artificial
+###  NPCs e Inteligencia Artificial
 - Helpers interactivos que giran hacia el jugador y proveen diálogos de misiones  
 - NPCs con patrullaje o movimiento autónomo mediante `NavMeshAgent`  
 
