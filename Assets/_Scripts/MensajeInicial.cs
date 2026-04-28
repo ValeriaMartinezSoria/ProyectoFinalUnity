@@ -13,7 +13,7 @@ public class MensajeInicial : MonoBehaviour
     "> EL TIEMPO CORRE...\n> ENCUENTRA EL CÓDIGO DE 4 DÍGITOS";
 
     [Header("Configuración")]
-    public float typingSpeed = 0.08f; // velocidad base
+    public float typingSpeed = 0.08f; 
     public float duracionEnPantalla = 5f;
 
     [Header("Audio")]
@@ -44,16 +44,16 @@ public class MensajeInicial : MonoBehaviour
         {
             textoUI.text += letra;
 
-            // 🔊 sonido
+
             if (typingSound != null && audioSource != null)
             {
                 audioSource.PlayOneShot(typingSound, 0.2f);
             }
 
-            // ⏱️ pausas inteligentes
+           
             if (letra == '.' || letra == '\n')
             {
-                yield return new WaitForSeconds(0.4f); // pausa dramática
+                yield return new WaitForSeconds(0.4f); 
             }
             else
             {

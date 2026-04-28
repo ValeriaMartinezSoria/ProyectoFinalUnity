@@ -38,7 +38,6 @@ public class GameTimer : MonoBehaviour
 
         UpdateTime();
 
-        // 🔥 ACTIVAR SONIDO UNA SOLA VEZ
         if (timeRemaining <= 30f && !sonidoYaSonado)
         {
             if (audioSource != null && sonidoFinal != null)

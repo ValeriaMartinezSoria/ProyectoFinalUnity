@@ -28,14 +28,14 @@ public class Player : MonoBehaviour
         estaCorriendo = value.isPressed;
     }
     
-    void OnRun(InputValue value) // Añadido por si tu Input Action se llama Run en lugar de Sprint
+    void OnRun(InputValue value) 
     {
         estaCorriendo = value.isPressed;
     }
 
     void OnJump(InputValue value)
     {
-        // Permite saltar solo si la velocidad vertical es cercana a 0 (simula estar en el suelo)
+       
         if (value.isPressed && Mathf.Abs(rb.linearVelocity.y) < 0.1f)
         {
             rb.AddForce(Vector3.up * fuerzaSalto, ForceMode.Impulse);
