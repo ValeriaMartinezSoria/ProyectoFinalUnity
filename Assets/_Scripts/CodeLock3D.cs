@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using TMPro;
-
+using UnityEngine.SceneManagement;
 
 public class CodeLock3D : MonoBehaviour
 {
@@ -16,16 +16,17 @@ public class CodeLock3D : MonoBehaviour
     public AudioClip buttonSound;
     public AudioClip correctSound;
     public AudioClip wrongSound;
-    
+
+    [Header("Escena de victoria")]
+    public string winScene = "WinScene";
+    public float delayBeforeWin = 2f; 
 
     public void PressButton(string value)
     {
-        if (isLocked) 
-        {  
-            return; 
-        }    
+        if (isLocked) return;
 
         audioSource.PlayOneShot(buttonSound);
+
         if (value == "C")
         {
             input = "";
@@ -46,20 +47,18 @@ public class CodeLock3D : MonoBehaviour
 
     void CheckCode()
     {
-        Debug.Log("Ingresado: " + input);
-        Debug.Log("Correcto: " + correctCode);
-
         if (input == correctCode)
         {
             audioSource.PlayOneShot(correctSound);
-            Debug.Log("Código correcto");
             isLocked = true;
             OpenDoor();
+
+       
+            Invoke("LoadWinScene", delayBeforeWin);
         }
         else
         {
             audioSource.PlayOneShot(wrongSound);
-            Debug.Log("Código incorrecto");
             input = "";
             displayText.text = "";
         }
@@ -68,5 +67,10 @@ public class CodeLock3D : MonoBehaviour
     void OpenDoor()
     {
         door.SetActive(false);
+    }
+
+    void LoadWinScene()
+    {
+        SceneManager.LoadScene(winScene);
     }
 }
