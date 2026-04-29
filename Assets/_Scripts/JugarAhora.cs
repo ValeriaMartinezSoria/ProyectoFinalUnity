@@ -17,6 +17,6 @@ public class JugarAhora : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
-        SceneManager.LoadScene("All");
+        SceneManager.LoadScene("Intro2Scene");
     }
 }
