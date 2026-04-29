@@ -6,34 +6,29 @@ public class PlayerLook : MonoBehaviour
     public float mouseSensitivity = 30f;
     public Transform playerCamera;
     public InputActionReference lockCursorAction;
-    public Transform doorCode;
+    public Transform target;
 
     private float xRotation = 0f;
     private Vector2 mouseInput;
     private bool cursorLocked = true;
 
-    private Quaternion playerRotateOriginal;
-    private Quaternion camRotateOriginal;
-
     void OnEnable()
     {
         if (lockCursorAction != null)
-        {
             lockCursorAction.action.Enable();
-        }
     }
 
     void OnDisable()
     {
         if (lockCursorAction != null)
-        { 
             lockCursorAction.action.Disable();
-        }
     }
 
     void Start()
     {
-        LockCursor();
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        cursorLocked = true;
     }
 
     void Update()
@@ -60,9 +55,7 @@ public class PlayerLook : MonoBehaviour
         xRotation -= mouseInput.y * mouseSensitivity * Time.deltaTime;
         xRotation = Mathf.Clamp(xRotation, -40f, 60f);
         playerCamera.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-
         transform.Rotate(Vector3.up * mouseInput.x * mouseSensitivity * Time.deltaTime);
-
         mouseInput = Vector2.zero;
     }
 
@@ -73,14 +66,8 @@ public class PlayerLook : MonoBehaviour
         cursorLocked = false;
         mouseInput = Vector2.zero;
 
-        transform.rotation = playerRotateOriginal;
-        playerCamera.localRotation = camRotateOriginal;
-
-        if (doorCode != null)
-        {
-            LookDoorCode();
-        }
-
+        if (target != null)
+            LookAt(target);
     }
 
     public void LockCursor()
@@ -89,17 +76,22 @@ public class PlayerLook : MonoBehaviour
         Cursor.visible = false;
         cursorLocked = true;
         mouseInput = Vector2.zero;
-
-        playerRotateOriginal = transform.rotation;
-        camRotateOriginal = playerCamera.rotation;
-
-        
     }
 
-    void LookDoorCode()
+    public void SetTarget(Transform newTarget)
     {
-        Vector3 direccion = doorCode.position - transform.position;
+        target = newTarget;
+    }
 
+    public void ClearTarget(Transform targetTransform)
+    {
+        if (target == targetTransform)
+            target = null;
+    }
+
+    void LookAt(Transform newTarget)
+    {
+        Vector3 direccion = newTarget.position - transform.position;
         Vector3 direccionHorizontal = new Vector3(direccion.x, 0f, direccion.z);
         if (direccionHorizontal.sqrMagnitude > 0.001f)
             transform.rotation = Quaternion.LookRotation(direccionHorizontal);
@@ -108,6 +100,4 @@ public class PlayerLook : MonoBehaviour
         float anguloVertical = -Mathf.Atan2(direccionLocal.y, direccionLocal.z) * Mathf.Rad2Deg;
         playerCamera.localRotation = Quaternion.Euler(anguloVertical, 0f, 0f);
     }
-
-
 }
