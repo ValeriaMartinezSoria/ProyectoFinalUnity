@@ -12,3 +12,7 @@ ProjectSettings/
 *.sln
 obj/
 
+
+Build/
+Builds/
+
