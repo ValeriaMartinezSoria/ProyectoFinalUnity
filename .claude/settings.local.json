@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -iE \"\\\\.unity$|\\\\.unity\\\\.meta$|alexis\")",
+      "Bash(git log *)"
+    ]
+  }
+}

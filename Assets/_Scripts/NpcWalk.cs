@@ -1,28 +1,24 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Npc : MonoBehaviour
+public class NpcWalk : NpcBase
 {
-    public float radiusMove = 10f;       
-    public float awaitTimeMin = 2f;        
-    public float awaitTimeMax = 5f;        
+    protected NavMeshAgent agent;
 
-    public Animator animator;
-
-    private NavMeshAgent agent;
+    private float radiusMove = 10f;
+    private float awaitTimeMin = 2f;
+    private float awaitTimeMax = 5f;
     private float awaitTime = 0f;
     private bool wait = false;
 
-    void Start()
+    protected override void Start()
     {
+        base.Start();  
         agent = GetComponent<NavMeshAgent>();
-        if (animator == null)
-            animator = GetComponent<Animator>();
-
         StartMoving();
     }
 
-    void Update()
+    protected virtual void Update()
     {
         if (animator != null)
             animator.SetFloat("Speed", agent.velocity.magnitude);
@@ -45,7 +41,7 @@ public class Npc : MonoBehaviour
         }
     }
 
-    void StartMoving()
+    protected void StartMoving()
     {
         Vector3 puntoAleatorio = ObtenerPuntoAleatorio(transform.position, radiusMove);
         agent.SetDestination(puntoAleatorio);
@@ -61,5 +57,10 @@ public class Npc : MonoBehaviour
             return hit.position;
 
         return transform.position;
+    }
+
+    public override void OnInteract()
+    {
+        Debug.Log(nombreNPC + " no responde a interacciones");
     }
 }
