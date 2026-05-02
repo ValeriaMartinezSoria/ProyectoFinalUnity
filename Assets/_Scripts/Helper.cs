@@ -2,84 +2,67 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Helper : MonoBehaviour
+public class Helper : NpcBase
 {
     public string mensaje = "Hola estudiante, tu misión es buscar pistas para salir del aula";
-    public float velocidadRotacion = 5f;
-    public string interaction = "Prresiona E para hablar";
-
+    public string interaction = "Presiona E para hablar";
     public GameObject textInteraction;
     public GameObject panelDialog;
     public TMP_Text textDialog;
-    public AudioSource audioSource;
-    public Animator animator;
+
+    public float velocidadRotacion = 5f;
     public InputActionReference interactAction;
 
-    private bool playerNear = false;
     private bool talking = false;
-    private Transform player;
+
+    void OnEnable()
+    {
+        if (interactAction != null)
+            interactAction.action.Enable();
+    }
+
+    void OnDisable()
+    {
+        if (interactAction != null)
+            interactAction.action.Disable();
+    }
 
     void Update()
     {
-        if (playerNear && interactAction.action.WasPressedThisFrame())
+        if (playerNear && interactAction != null && interactAction.action.WasPressedThisFrame())
         {
-            if (!talking)
-            {
-                StartTalking();
-                animator.SetBool("IsTalking", true);
-            }
-            else
-            {
-                FinishTalking();
-                animator.SetBool("IsTalking", false);
-            }
+            OnInteract();
         }
-
         if (talking && player != null)
         {
-            MirarAlJugador();
+            LookPlayer();
         }
     }
 
-    void MirarAlJugador()
+    protected override void OnPlayerEnter()
     {
-        Vector3 direccion = player.position - transform.position;
-        direccion.y = 0f;
+        base.OnPlayerEnter();
 
-        if (direccion.sqrMagnitude > 0.001f)
-        {
-            Quaternion rotacionObjetivo = Quaternion.LookRotation(direccion);
-            transform.rotation = Quaternion.Slerp(transform.rotation, rotacionObjetivo, velocidadRotacion * Time.deltaTime);
-        }
+        TMP_Text tmp = textInteraction.GetComponent<TMP_Text>();
+        if (tmp != null) tmp.text = interaction;
+        textInteraction.SetActive(true);
     }
 
-    private void OnTriggerEnter(Collider other)
+    protected override void OnPlayerExit()
     {
-        if (other.CompareTag("Player"))
-        {
-            playerNear = true;
-            player = other.transform;
+        base.OnPlayerExit();
 
-            TMPro.TMP_Text tmp = textInteraction.GetComponent<TMPro.TMP_Text>();
-            tmp.text = interaction;
-
-            textInteraction.SetActive(true);
-        }
+        textInteraction.SetActive(false);
+        if (talking)
+            FinishTalking();
     }
 
-    private void OnTriggerExit(Collider other)
+    public override void OnInteract()
     {
-        if (other.CompareTag("Player"))
-        {
-            playerNear = false;
-            player = null;
-            textInteraction.SetActive(false);
-            if (talking)
-            {
-                FinishTalking();
-                animator.SetBool("IsTalking", false);
-            }
-        }
+        if (!talking)
+            StartTalking();
+        else
+            FinishTalking();
     }
 
     void StartTalking()
@@ -88,8 +71,9 @@ public class Helper : MonoBehaviour
         textInteraction.SetActive(false);
         panelDialog.SetActive(true);
         textDialog.text = mensaje;
-        if (audioSource != null)
-            audioSource.Play();
+
+        if (animator != null) animator.SetBool("IsTalking", true);
+        if (audioSource != null) audioSource.Play();
     }
 
     void FinishTalking()
@@ -98,7 +82,20 @@ public class Helper : MonoBehaviour
         panelDialog.SetActive(false);
         if (playerNear)
             textInteraction.SetActive(true);
-        if (audioSource != null)
-            audioSource.Stop();
+
+        if (animator != null) animator.SetBool("IsTalking", false);
+        if (audioSource != null) audioSource.Stop();
+    }
+
+    void LookPlayer()
+    {
+        Vector3 direccion = player.position - transform.position;
+        direccion.y = 0f;
+        if (direccion.sqrMagnitude > 0.001f)
+        {
+            Quaternion rotacionObjetivo = Quaternion.LookRotation(direccion);
+            transform.rotation = Quaternion.Slerp(transform.rotation, rotacionObjetivo,
+                                                   velocidadRotacion * Time.deltaTime);
+        }
     }
 }

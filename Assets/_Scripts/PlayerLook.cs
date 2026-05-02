@@ -8,6 +8,8 @@ public class PlayerLook : MonoBehaviour
     public InputActionReference lockCursorAction;
     public Transform target;
 
+    public Animator cameraAnimator;
+
     [Header("Raycast Highlight")]
     public float rayDistance = 4f;
 
@@ -20,13 +22,17 @@ public class PlayerLook : MonoBehaviour
     void OnEnable()
     {
         if (lockCursorAction != null)
+        {
             lockCursorAction.action.Enable();
+        }
     }
 
     void OnDisable()
     {
         if (lockCursorAction != null)
+        {
             lockCursorAction.action.Disable();
+        }
     }
 
     void Start()
@@ -75,7 +81,13 @@ public class PlayerLook : MonoBehaviour
         mouseInput = Vector2.zero;
 
         if (target != null)
+        {
             LookAt(target);
+            if (cameraAnimator != null)
+            {
+                cameraAnimator.SetBool("IsFocusing", true);
+            }
+        }
     }
 
     public void LockCursor()
@@ -84,6 +96,11 @@ public class PlayerLook : MonoBehaviour
         Cursor.visible = false;
         cursorLocked = true;
         mouseInput = Vector2.zero;
+
+        if (cameraAnimator != null)
+        {
+            cameraAnimator.SetBool("IsFocusing", false);
+        }
     }
 
     public void SetTarget(Transform newTarget)
@@ -94,7 +111,9 @@ public class PlayerLook : MonoBehaviour
     public void ClearTarget(Transform targetTransform)
     {
         if (target == targetTransform)
+        {
             target = null;
+        }
     }
 
     void LookAt(Transform newTarget)
