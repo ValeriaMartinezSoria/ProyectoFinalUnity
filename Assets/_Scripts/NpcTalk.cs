@@ -7,8 +7,7 @@ public class NpcTalk : NpcWalk
     private float waitTimeAfterTalk = 5f;
     private float timeTalking = 0f;
     private float cooldownAfterTalk = 0f;
-    private bool talking = false;
-    
+    private bool talking = false; 
 
     protected override void Start()
     {

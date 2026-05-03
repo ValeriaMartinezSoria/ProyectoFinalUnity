@@ -10,9 +10,9 @@ public class Helper : NpcBase
     public GameObject panelDialog;
     public TMP_Text textDialog;
 
-    public float velocidadRotacion = 5f;
     public InputActionReference interactAction;
 
+    private float velocidadRotacion = 5f;
     private bool talking = false;
 
     void OnEnable()

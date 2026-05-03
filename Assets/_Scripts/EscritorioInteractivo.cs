@@ -9,7 +9,6 @@ public class EscritorioInteractivo : MonoBehaviour
 
     [Header("Sonido")]
     public AudioSource audioSource;
-    private bool yaSonó = false;
 
     void Update()
     {
@@ -42,7 +41,6 @@ public class EscritorioInteractivo : MonoBehaviour
         GirarEscritorio();
     }
 
-    // 🔊 Detectar cercanía
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
