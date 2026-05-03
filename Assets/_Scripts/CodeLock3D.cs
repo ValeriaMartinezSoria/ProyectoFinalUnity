@@ -67,6 +67,17 @@ public class CodeLock3D : MonoBehaviour
 
     void OpenDoor()
     {
+        Debug.Log("OpenDoor() llamado. Desactivando puerta...");
         door.SetActive(false);
+        
+     
+        if (AnomalyManager.Instance != null)
+        {
+            AnomalyManager.Instance.MostrarTextoAnomalias();
+        }
+        else
+        {
+            Debug.LogError("No se encontró el AnomalyManager en la escena.");
+        }
     }
 }
