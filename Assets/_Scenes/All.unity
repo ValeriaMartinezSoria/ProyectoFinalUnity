@@ -37962,7 +37962,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 462355884763653738, guid: 7ffa300b9f119a346b356a67d855321e, type: 3}
       propertyPath: m_text
-      value: "1\xB0-> 2"
+      value: "1\xB0= 6"
       objectReference: {fileID: 0}
     - target: {fileID: 1795369787408681669, guid: 7ffa300b9f119a346b356a67d855321e, type: 3}
       propertyPath: textClue
@@ -82800,8 +82800,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 729330680}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.76463, y: -0.40185001, z: -4.241889}
+  m_LocalRotation: {x: -0, y: -0.9945661, z: -0, w: -0.1041081}
+  m_LocalPosition: {x: 3.108958, y: -0.40185001, z: -7.4011016}
   m_LocalScale: {x: 0.5, y: 0.55, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -82811,7 +82811,7 @@ Transform:
   - {fileID: 1742070718}
   - {fileID: 721931177}
   m_Father: {fileID: 1176708243}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -191.952, z: 0}
 --- !u!43 &734456455
 Mesh:
   m_ObjectHideFlags: 0
@@ -103688,7 +103688,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "4\xB0-> 0"
+  m_text: "4\xB0= 0"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -119775,7 +119775,7 @@ Transform:
   m_GameObject: {fileID: 1055302113}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.9787023, z: -0, w: -0.2052849}
-  m_LocalPosition: {x: 3.1697521, y: -0.40885, z: -7.4327097}
+  m_LocalPosition: {x: 2.31, y: -0.40885, z: -7.43}
   m_LocalScale: {x: 0.5, y: 0.55, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -152989,11 +152989,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5195822731287006890, guid: 1d08eb9304ef2d247b4c953f91c9ca75, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.6176711
+      value: -0.76
       objectReference: {fileID: 0}
     - target: {fileID: 5195822731287006890, guid: 1d08eb9304ef2d247b4c953f91c9ca75, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.46
+      value: 7.8
       objectReference: {fileID: 0}
     - target: {fileID: 5195822731287006890, guid: 1d08eb9304ef2d247b4c953f91c9ca75, type: 3}
       propertyPath: m_LocalRotation.w
@@ -220368,8 +220368,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1932566892}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.4945052, z: -0, w: 0.86917466}
-  m_LocalPosition: {x: 5.036642, y: -0.40885, z: -6.0069456}
+  m_LocalRotation: {x: -0, y: 0.99189746, z: -0, w: 0.12704119}
+  m_LocalPosition: {x: 3.96, y: -0.40885, z: -7.63}
   m_LocalScale: {x: 0.5, y: 0.55, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -220379,7 +220379,7 @@ Transform:
   - {fileID: 1989450981}
   - {fileID: 482507132}
   m_Father: {fileID: 1176708243}
-  m_LocalEulerAnglesHint: {x: 0, y: 59.274, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 165.403, z: 0}
 --- !u!1 &1936699938
 GameObject:
   m_ObjectHideFlags: 0
@@ -227583,7 +227583,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 6b0604714ae6da643af0935499913b93, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -228699,7 +228699,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 6b0604714ae6da643af0935499913b93, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -234092,7 +234092,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "3\xB0-> 8"
+  m_text: "3\xB0 = 5"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -238540,7 +238540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CodeLock3D
   displayText: {fileID: 252156595}
-  correctCode: 2580
+  correctCode: 6250
   isLocked: 0
   door: {fileID: 203379241}
   audioSource: {fileID: 1221152215}
@@ -240804,7 +240804,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 462355884763653738, guid: 7ffa300b9f119a346b356a67d855321e, type: 3}
       propertyPath: m_text
-      value: "2\xB0-> 5"
+      value: "2\xB0 = 2"
       objectReference: {fileID: 0}
     - target: {fileID: 1218792368131860551, guid: 7ffa300b9f119a346b356a67d855321e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
