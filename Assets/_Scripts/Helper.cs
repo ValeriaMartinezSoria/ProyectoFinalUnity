@@ -9,6 +9,7 @@ public class Helper : NpcBase
     public GameObject textInteraction;
     public GameObject panelDialog;
     public TMP_Text textDialog;
+    public GameObject talkHelperWarning;
 
     public InputActionReference interactAction;
 
@@ -46,6 +47,11 @@ public class Helper : NpcBase
         TMP_Text tmp = textInteraction.GetComponent<TMP_Text>();
         if (tmp != null) tmp.text = interaction;
         textInteraction.SetActive(true);
+
+        if (talkHelperWarning != null)
+        {
+            talkHelperWarning.SetActive(true);
+        }
     }
 
     protected override void OnPlayerExit()
@@ -53,6 +59,12 @@ public class Helper : NpcBase
         base.OnPlayerExit();
 
         textInteraction.SetActive(false);
+
+        if (talkHelperWarning != null)
+        {
+            talkHelperWarning.SetActive(false);
+        }
+
         if (talking)
             FinishTalking();
     }
@@ -72,8 +84,18 @@ public class Helper : NpcBase
         panelDialog.SetActive(true);
         textDialog.text = mensaje;
 
-        if (animator != null) animator.SetBool("IsTalking", true);
-        if (audioSource != null) audioSource.Play();
+        if (animator != null)
+        {
+            animator.SetBool("IsTalking", true);
+        }
+        if (audioSource != null)
+        {
+            audioSource.Play();
+        }
+        if (talkHelperWarning != null)
+        {
+            talkHelperWarning.SetActive(false);
+        }
     }
 
     void FinishTalking()

@@ -10,9 +10,7 @@ public class PlayerLook : MonoBehaviour
 
     public Animator cameraAnimator;
 
-    [Header("Raycast Highlight")]
     public float rayDistance = 4f;
-
     private float xRotation = 0f;
     private Vector2 mouseInput;
     private bool cursorLocked = true;
@@ -55,8 +53,10 @@ public class PlayerLook : MonoBehaviour
         if (cursorLocked)
         {
             LookAround();
-            CheckHighlight(); 
         }
+
+        CheckHighlight();
+
     }
 
     public void OnLook(InputValue data)
@@ -133,6 +133,15 @@ public class PlayerLook : MonoBehaviour
     void CheckHighlight()
     {
         Ray ray = new Ray(playerCamera.position, playerCamera.forward);
+
+        Camera cam = playerCamera.GetComponent<Camera>();
+        if (cam == null)
+        {
+            ClearHighlight();
+            return;
+        }
+        ray = cam.ScreenPointToRay(Mouse.current.position.ReadValue());
+
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit, rayDistance))
