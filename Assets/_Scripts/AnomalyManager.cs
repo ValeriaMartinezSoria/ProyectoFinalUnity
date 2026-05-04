@@ -40,6 +40,8 @@ public class AnomalyManager : MonoBehaviour
     
     public void MostrarTextoAnomalias()
     {
+        if (currentAnomalies >= totalAnomalies) return; // No mostrar si ya se completaron
+
         if (textAnomalies != null)
         {
             textAnomalies.gameObject.SetActive(true);

@@ -27,7 +27,8 @@
       "Bash(git cherry-pick *)",
       "Bash(awk -F: '$2>=186950 && $2<=187300')",
       "Bash(awk *)",
-      "PowerShell(.\\\\fix_dd5eb57.ps1)"
+      "PowerShell(.\\\\fix_dd5eb57.ps1)",
+      "Bash(Select-Object -First 50)"
     ]
   }
 }
