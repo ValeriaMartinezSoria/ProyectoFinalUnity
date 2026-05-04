@@ -2,16 +2,12 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
-
-
 public class Pausemanager : MonoBehaviour
 {
     public static Pausemanager Instance { get; private set; }
     public GameObject pauseMenu;
     public InputActionReference escButton;
     private bool isGamePaused = false;
-
-
     public void Awake()
     {
         if (Instance != null && Instance != this)
@@ -21,19 +17,17 @@ public class Pausemanager : MonoBehaviour
         else
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
         }
     }
-
     void Start()
     {
         pauseMenu.SetActive(false);
     }
 
-    
     void Update()
     {
-        if(escButton.action.WasPressedThisFrame())
+        if (escButton.action.WasPressedThisFrame())
         {
             if (isGamePaused)
             {
@@ -44,9 +38,7 @@ public class Pausemanager : MonoBehaviour
                 PauseGame();
             }
         }
-
     }
-
     private void PauseGame()
     {
         isGamePaused = true;
@@ -55,30 +47,25 @@ public class Pausemanager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
-
     private void ResumeGame()
     {
         isGamePaused = false;
-        pauseMenu.SetActive(false); 
+        pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
-
     public void OnResumeButton()
     {
         ResumeGame();
     }
-
     public void OnExitButton()
     {
-        Application.Quit ();
+        Application.Quit();
     }
-
     public void OnVolumeButton(float volume)
     {
         AudioListener.volume = volume;
     }
 
-  
 }

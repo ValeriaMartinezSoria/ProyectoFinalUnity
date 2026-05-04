@@ -2,13 +2,11 @@
 
 public class EscritorioInteractivo : MonoBehaviour
 {
-    [Header("Rotación")]
     public float velocidad = 2f;
-    private bool girando = false;
-    private Quaternion rotacionObjetivo;
-
-    [Header("Sonido")]
     public AudioSource audioSource;
+
+    private bool girando = false;
+    private Quaternion rotacionObjetivo;    
 
     void Update()
     {
