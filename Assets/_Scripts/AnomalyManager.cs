@@ -8,11 +8,11 @@ public class AnomalyManager : MonoBehaviour
     public TMP_Text textAnomalies;
     public int totalAnomalies = 10;
     
-    [Header("Recompensa al terminar (Wall)")]
+  
     public GameObject wallToDisappear; 
     public GameObject objectToPassThrough;
 
-    [Header("Sonido de Puerta / Recompensa")]
+   
     public AudioSource audioSource;
     public AudioClip doorOpenSound;
 
@@ -58,13 +58,13 @@ public class AnomalyManager : MonoBehaviour
         {
             Debug.Log("¡Todas las anomalías recolectadas!");
 
-            // 🔹 1. Desaparece la pared
+           
             if (wallToDisappear != null)
             {
                 wallToDisappear.SetActive(false);
             }
 
-            // 🔹 2. Se vuelve atravesable otro objeto
+           
             if (objectToPassThrough != null)
             {
                 Collider col = objectToPassThrough.GetComponent<Collider>();
@@ -74,13 +74,13 @@ public class AnomalyManager : MonoBehaviour
                 }
             }
 
-            // Ocultar texto
+            
             if (textAnomalies != null)
             {
                 textAnomalies.gameObject.SetActive(false);
             }
 
-            // Sonido
+           
             if (audioSource != null && doorOpenSound != null)
             {
                 audioSource.PlayOneShot(doorOpenSound);

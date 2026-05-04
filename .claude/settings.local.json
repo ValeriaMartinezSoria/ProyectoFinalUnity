@@ -17,7 +17,11 @@
       "Bash(LC_ALL=C sed -n '129400,129468p' .git/merge-tmp/All_THEIRS.unity)",
       "Bash(git checkout *)",
       "Bash(git add *)",
-      "Bash(git rm *)"
+      "Bash(git rm *)",
+      "Bash(python *)",
+      "PowerShell(.\\\\fix_merge.ps1)",
+      "PowerShell(Resolve-Path *)",
+      "Bash(grep -cE *)"
     ]
   }
 }
