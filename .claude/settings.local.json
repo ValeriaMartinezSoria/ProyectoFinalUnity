@@ -17,7 +17,17 @@
       "Bash(LC_ALL=C sed -n '129400,129468p' .git/merge-tmp/All_THEIRS.unity)",
       "Bash(git checkout *)",
       "Bash(git add *)",
-      "Bash(git rm *)"
+      "Bash(git rm *)",
+      "Bash(python *)",
+      "PowerShell(.\\\\fix_merge.ps1)",
+      "PowerShell(Resolve-Path *)",
+      "Bash(grep -cE *)",
+      "Bash(awk -F: '/&260444168|&260444169|&260444170|&260444171|&260444172|&260444173|&260444174/ {print}')",
+      "Bash(git reset *)",
+      "Bash(git cherry-pick *)",
+      "Bash(awk -F: '$2>=186950 && $2<=187300')",
+      "Bash(awk *)",
+      "PowerShell(.\\\\fix_dd5eb57.ps1)"
     ]
   }
 }
