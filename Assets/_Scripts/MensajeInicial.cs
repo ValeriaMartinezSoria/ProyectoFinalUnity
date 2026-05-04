@@ -4,19 +4,19 @@ using TMPro;
 
 public class MensajeInicial : MonoBehaviour
 {
-    [Header("Referencia UI")]
+ 
     public TextMeshProUGUI texto;
 
-    [Header("Contenido")]
+    
     [TextArea]
     public string mensaje =
     "> EL TIEMPO CORRE...\n> ENCUENTRA EL CÓDIGO DE 4 DÍGITOS";
 
-    [Header("Configuración")]
+ 
     public float typingSpeed = 0.08f; 
     public float duracionEnPantalla = 5f;
 
-    [Header("Audio")]
+   
     public AudioSource audioSource;
     public AudioClip typingSound;
 
