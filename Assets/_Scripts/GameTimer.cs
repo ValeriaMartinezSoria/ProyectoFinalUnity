@@ -55,7 +55,7 @@ public class GameTimer : MonoBehaviour
         int seconds = Mathf.FloorToInt(timeRemaining % 60f);
         textTimer.text = string.Format("{0:00}:{1:00}", minutes, seconds);
 
-        if (timeRemaining <= 30f)
+        if (timeRemaining <= 25f)
         {
             textTimer.color = Color.red;
         }

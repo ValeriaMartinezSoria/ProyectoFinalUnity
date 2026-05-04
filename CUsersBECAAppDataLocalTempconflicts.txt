@@ -1,0 +1,50 @@
+UU .gitignore
+AA .vs/ProyectoFinalUnity/v17/DocumentLayout.json
+AA "Assets/Food Pack-Demo/Texture.meta"
+DU Assets/LeartesStudios/CoffeeShopInterior/HDRP/Art/Materials.meta
+DU Assets/LeartesStudios/CoffeeShopInterior/HDRP/Art/Meshes/Cubeult.obj.meta
+UA Assets/LeartesStudios/CoffeeShopInterior/HDRP/Art/Meshes/Materials.meta
+DU Assets/LeartesStudios/CoffeeShopInterior/HDRP/Art/ShaderGraphs/S_PBR_TRANSPARENT_ORM_LeartesMasterMaterial.shadergraph
+DU Assets/LeartesStudios/CoffeeShopInterior/HDRP/Art/Textures.meta
+DU Assets/LeartesStudios/CoffeeShopInterior/HDRP/Art/Textures/HDRI_Cloud.HDR.meta
+DU Assets/LeartesStudios/CoffeeShopInterior/HDRP/Art/Textures/T_ACBoxExaust_N.TGA.meta
+DU Assets/LeartesStudios/CoffeeShopInterior/HDRP/Art/Textures/T_ACCables_Trim_N.TGA.meta
+DU Assets/LeartesStudios/CoffeeShopInterior/HDRP/Art/Textures/T_BoothChairsTables_Trim_N.TGA.meta
+DU Assets/LeartesStudios/CoffeeShopInterior/HDRP/Art/Textures/T_DirtMask.TGA
+DU Assets/LeartesStudios/CoffeeShopInterior/HDRP/Art/Textures/T_DirtMask.TGA.meta
+DU Assets/LeartesStudios/CoffeeShopInterior/HDRP/Art/Textures/T_DirtMasks_01_ORM.TGA
+DU Assets/LeartesStudios/CoffeeShopInterior/HDRP/Art/Textures/T_EpoxyFlooring_B.TGA
+DU Assets/LeartesStudios/CoffeeShopInterior/HDRP/Art/Textures/T_Kprops_B.TGA.meta
+DU Assets/LeartesStudios/CoffeeShopInterior/HDRP/Art/Textures/T_Kprops_N.TGA.meta
+DU Assets/LeartesStudios/CoffeeShopInterior/HDRP/Art/Textures/T_LeakDecal_1_O.BMP
+DU Assets/LeartesStudios/CoffeeShopInterior/HDRP/Art/Textures/T_PeeledPaintWall_B.TGA
+DU Assets/LeartesStudios/CoffeeShopInterior/HDRP/Art/Textures/T_PlantPot_Frond_O.TGA
+DU Assets/LeartesStudios/CoffeeShopInterior/HDRP/Art/Textures/T_Props_SubstancePainter_PaintingsChalkboard_N.TGA
+DU Assets/LeartesStudios/CoffeeShopInterior/HDRP/Art/Textures/T_Props_SubstancePainter_PaintingsChalkboard_Scattering.BMP
+DU Assets/LeartesStudios/CoffeeShopInterior/HDRP/Art/Textures/T_RGBTable.TGA.meta
+DU Assets/LeartesStudios/CoffeeShopInterior/HDRP/Art/Textures/T_smokepuff.TGA
+DU Assets/LeartesStudios/CoffeeShopInterior/HDRP/HDRPDefaultResources/DefaultHDRISky.exr.meta
+DU Assets/LeartesStudios/CoffeeShopInterior/HDRP/Prefabs.meta
+DU Assets/LeartesStudios/CoffeeShopInterior/HDRP/Prefabs/CeilingParts_SM_AC_TJoint_168.prefab
+DU Assets/LeartesStudios/CoffeeShopInterior/HDRP/Prefabs/Props_SM_CoffeMug_7.prefab
+DU Assets/LeartesStudios/CoffeeShopInterior/HDRP/Prefabs/SM_Plate9.prefab
+DU Assets/LeartesStudios/CoffeeShopInterior/HDRP/Prefabs/WallProps_SM_WallShelves3_2.prefab
+DU Assets/LeartesStudios/CoffeeShopInterior/HDRP/Scenes.meta
+AA Assets/_Animator/Focus.anim
+AA Assets/_Animator/StopFocus.anim
+UA "Assets/_Images/Materials/CampusFoto 1.mat.meta"
+UA Assets/_Images/Materials/MAT_ParedCafeteria.mat.meta
+AA Assets/_Images/Materials/adivinanzafrutas.mat.meta
+AA Assets/_Images/Materials/alexis.mat.meta
+AA "Assets/_Images/Materials/bolivar 1.mat.meta"
+AA "Assets/_Images/Materials/bolivar 2.mat.meta"
+DU Assets/_Images/ParedCafeteria.png.meta
+DU Assets/_Materials/MAT_ParedBlanca.mat
+UU Assets/_Scenes/All.unity
+UU "Assets/_Scenes/All/NavMesh-NavMesh Surface.asset"
+UU ProjectSettings/Packages/com.unity.probuilder/Settings.json
+DD ProyectoFinal/Assets/LowPolyOfficeProps_LITE/Materials/LPOP_TextureAtlas1_FULL-Emissive.mat.meta
+DD ProyectoFinal/Assets/LowPolyOfficeProps_LITE/Materials/LPOP_TextureAtlas1_FULL-MetalGloss.mat.meta
+DD ProyectoFinal/Assets/LowPolyOfficeProps_LITE/Materials/LPOP_TextureAtlas1_FULL.mat.meta
+DD ProyectoFinal/Assets/Materials.meta
+DD ProyectoFinal/Assets/Materials/MAT_MesaMarron.mat.meta
