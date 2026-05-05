@@ -65,12 +65,14 @@ public class CodeLock3D : MonoBehaviour
         }
     }
 
+    public bool esAbrirOficina = false;
+
     void OpenDoor()
     {
         Debug.Log("OpenDoor() llamado. Desactivando puerta...");
         door.SetActive(false);
-        
-     
+
+
         if (AnomalyManager.Instance != null)
         {
             AnomalyManager.Instance.MostrarTextoAnomalias();
@@ -78,6 +80,11 @@ public class CodeLock3D : MonoBehaviour
         else
         {
             Debug.LogError("No se encontró el AnomalyManager en la escena.");
+        }
+
+        if (esAbrirOficina && OrganizeOfficeManager.Instance != null)
+        {
+            OrganizeOfficeManager.Instance.MostrarTextoPuzzle();
         }
     }
 }

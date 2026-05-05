@@ -2,24 +2,35 @@ using UnityEngine;
 
 public class HighlightOnLook : MonoBehaviour
 {
-    public Color colorNormal = Color.white;
     public Color colorResaltado = Color.green;
 
     private Renderer rend;
+    private Color colorOriginal;
 
     void Start()
     {
         rend = GetComponent<Renderer>();
-        rend.material.color = colorNormal;
+
+        // Guardamos el color original DE TU TEXTURA en lugar de ponerlo todo blanco
+        if (rend.material.HasProperty("_BaseColor"))
+            colorOriginal = rend.material.GetColor("_BaseColor");
+        else if (rend.material.HasProperty("_Color"))
+            colorOriginal = rend.material.color;
     }
 
     public void OnLookEnter()
     {
-        rend.material.color = colorResaltado;
+        if (rend.material.HasProperty("_BaseColor"))
+            rend.material.SetColor("_BaseColor", colorResaltado);
+        else if (rend.material.HasProperty("_Color"))
+            rend.material.color = colorResaltado;
     }
 
     public void OnLookExit()
     {
-        rend.material.color = colorNormal;
+        if (rend.material.HasProperty("_BaseColor"))
+            rend.material.SetColor("_BaseColor", colorOriginal);
+        else if (rend.material.HasProperty("_Color"))
+            rend.material.color = colorOriginal;
     }
 }
