@@ -45,9 +45,13 @@ public class PlayerLook : MonoBehaviour
         if (lockCursorAction != null && lockCursorAction.action.WasPressedThisFrame())
         {
             if (cursorLocked)
+            {
                 UnlockCursor();
+            }
             else
+            {
                 LockCursor();
+            }
         }
 
         if (cursorLocked)
@@ -122,8 +126,9 @@ public class PlayerLook : MonoBehaviour
 
         Vector3 direccionHorizontal = new Vector3(direccion.x, 0f, direccion.z);
         if (direccionHorizontal.sqrMagnitude > 0.001f)
+        {
             transform.rotation = Quaternion.LookRotation(direccionHorizontal);
-
+        }
         Vector3 direccionLocal = transform.InverseTransformDirection(direccion);
         float anguloVertical = -Mathf.Atan2(direccionLocal.y, direccionLocal.z) * Mathf.Rad2Deg;
         playerCamera.localRotation = Quaternion.Euler(anguloVertical, 0f, 0f);
@@ -153,8 +158,9 @@ public class PlayerLook : MonoBehaviour
                 if (currentHighlight != newHighlight)
                 {
                     if (currentHighlight != null)
+                    {
                         currentHighlight.OnLookExit();
-
+                    }
                     newHighlight.OnLookEnter();
                     currentHighlight = newHighlight;
                 }

@@ -19,13 +19,17 @@ public class Helper : NpcBase
     void OnEnable()
     {
         if (interactAction != null)
+        {
             interactAction.action.Enable();
+        }
     }
 
     void OnDisable()
     {
         if (interactAction != null)
+        {
             interactAction.action.Disable();
+        }
     }
 
     void Update()
@@ -45,7 +49,10 @@ public class Helper : NpcBase
         base.OnPlayerEnter();
 
         TMP_Text tmp = textInteraction.GetComponent<TMP_Text>();
-        if (tmp != null) tmp.text = interaction;
+        if (tmp != null)
+        {
+            tmp.text = interaction;
+        }
         textInteraction.SetActive(true);
 
         if (talkHelperWarning != null)
@@ -66,15 +73,21 @@ public class Helper : NpcBase
         }
 
         if (talking)
+        {
             FinishTalking();
+        }
     }
 
     public override void OnInteract()
     {
         if (!talking)
+        {
             StartTalking();
+        }
         else
+        {
             FinishTalking();
+        }
     }
 
     void StartTalking()
@@ -103,10 +116,17 @@ public class Helper : NpcBase
         talking = false;
         panelDialog.SetActive(false);
         if (playerNear)
+        {
             textInteraction.SetActive(true);
-
-        if (animator != null) animator.SetBool("IsTalking", false);
-        if (audioSource != null) audioSource.Stop();
+        }
+        if (animator != null)
+        {
+            animator.SetBool("IsTalking", false);
+        }
+        if (audioSource != null)
+        {
+            audioSource.Stop();
+        }
     }
 
     void LookPlayer()

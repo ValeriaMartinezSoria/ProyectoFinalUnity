@@ -30,7 +30,9 @@ public class Focus : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             if (playerLook != null)
+            {
                 playerLook.ClearTarget(lockPoint);
+            }
         }
     }
 }
