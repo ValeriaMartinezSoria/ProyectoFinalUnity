@@ -6,11 +6,11 @@ public class GameTimer : MonoBehaviour
     public TMP_Text textTimer;
 
     private string loseScene = "LoseScene";
-    private float totalTime = 180f;
     private float timeRemaining;
     private bool timerEnds = false;
 
-    [Header("Audio")]
+    public float totalTime = 180f;
+
     public AudioSource audioSource;
     public AudioClip sonidoFinal;
     private bool sonidoYaSonado = false;

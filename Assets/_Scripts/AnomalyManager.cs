@@ -16,6 +16,8 @@ public class AnomalyManager : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip doorOpenSound;
 
+    public MensajeMisiones mensajeMision2;
+
     private int currentAnomalies = 0;
 
     void Awake()
@@ -40,7 +42,7 @@ public class AnomalyManager : MonoBehaviour
     
     public void MostrarTextoAnomalias()
     {
-        if (currentAnomalies >= totalAnomalies) return; // No mostrar si ya se completaron
+        if (currentAnomalies >= totalAnomalies) return; 
 
         if (textAnomalies != null)
         {
@@ -86,6 +88,11 @@ public class AnomalyManager : MonoBehaviour
             if (audioSource != null && doorOpenSound != null)
             {
                 audioSource.PlayOneShot(doorOpenSound);
+            }
+
+            if (mensajeMision2 != null)
+            {
+                mensajeMision2.Mostrar();
             }
         }
     }
