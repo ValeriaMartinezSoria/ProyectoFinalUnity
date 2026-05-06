@@ -149,7 +149,7 @@ public class PlayerLook : MonoBehaviour
 
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, rayDistance))
+        if (Physics.Raycast(ray, out hit, rayDistance, ~0, QueryTriggerInteraction.Ignore))
         {
             HighlightOnLook newHighlight = hit.collider.GetComponentInParent<HighlightOnLook>();
 

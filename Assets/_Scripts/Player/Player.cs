@@ -35,7 +35,8 @@ public class Player : MonoBehaviour
 
     void OnJump(InputValue value)
     {
-       
+        if (Cursor.visible) return;
+
         if (value.isPressed && Mathf.Abs(rb.linearVelocity.y) < 0.1f)
         {
             rb.AddForce(Vector3.up * fuerzaSalto, ForceMode.Impulse);
@@ -49,6 +50,17 @@ public class Player : MonoBehaviour
 
     public void MovePlayer()
     {
+
+        if (Cursor.visible)
+        {
+            rb.linearVelocity = new Vector3(0f, rb.linearVelocity.y, 0f);
+
+            if (animator != null)
+                animator.SetFloat("Speed", 0f);
+
+            return;
+        }
+
         float velocidadActual = estaCorriendo ? velocidadCorriendo : velocidadCaminando;
         Vector3 direccion = transform.right * inputMovimiento.x + transform.forward * inputMovimiento.y;
         
