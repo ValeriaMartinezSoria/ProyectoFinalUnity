@@ -11,7 +11,7 @@ public class HighlightOnLook : MonoBehaviour
     {
         rend = GetComponent<Renderer>();
 
-        // Guardamos el color original DE TU TEXTURA en lugar de ponerlo todo blanco
+        
         if (rend.material.HasProperty("_BaseColor"))
             colorOriginal = rend.material.GetColor("_BaseColor");
         else if (rend.material.HasProperty("_Color"))

@@ -39,12 +39,12 @@ public abstract class NpcBase : MonoBehaviour
 
     protected virtual void OnPlayerEnter()
     {
-        Debug.Log(nombreNPC + ": jugador se acercó");
+        Debug.Log(nombreNPC + ": jugador se acerco");
     }
 
     protected virtual void OnPlayerExit()
     {
-        Debug.Log(nombreNPC + ": jugador se alejó");
+        Debug.Log(nombreNPC + ": jugador se alejo");
     }
 
     public abstract void OnInteract();

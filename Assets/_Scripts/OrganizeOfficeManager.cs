@@ -35,12 +35,12 @@ public class OrganizeOfficeManager : MonoBehaviour
         Debug.Log("OrganizeOfficeManager iniciado.");
         if (orderlyObjectsModel != null)
         {
-            orderlyObjectsModel.SetActive(false); // Inicia oculto
+            orderlyObjectsModel.SetActive(false); 
         }
 
         if (counterText != null)
         {
-            counterText.gameObject.SetActive(false); // <--- AHORA INICIA OCULTO
+            counterText.gameObject.SetActive(false); 
             UpdateUI();
         }
     }
@@ -67,25 +67,25 @@ public class OrganizeOfficeManager : MonoBehaviour
         {
             Debug.Log("¡Todos los objetos de la oficina han sido ordenados!");
 
-            // Quitar el texto de la pantalla
+           
             if (counterText != null)
             {
                 counterText.gameObject.SetActive(false);
             }
 
-            // 1. Quitar pared
+         
             if (wallToDisappear != null)
             {
                 wallToDisappear.SetActive(false);
             }
 
-            // 2. Encender modelo estético de objetos ordenados
+           
             if (orderlyObjectsModel != null)
             {
                 orderlyObjectsModel.SetActive(true);
             }
 
-            // 3. Audio de finalización
+            
             if (audioSource != null && completadoSound != null)
             {
                 audioSource.PlayOneShot(completadoSound);

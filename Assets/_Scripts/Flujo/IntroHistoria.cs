@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
@@ -16,23 +16,46 @@ public class IntroHistoria : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip sonidoTecla;
 
-    public string siguienteEscena = "All";
+    public string siguienteEscena = "Controles"; 
+
+    private Coroutine historiaCoroutine;
+    private bool omitir = false;
 
     void Start()
     {
-        StartCoroutine(ReproducirHistoria());
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+
+        historiaCoroutine = StartCoroutine(ReproducirHistoria());
+    }
+
+    public void Omitir()
+    {
+        omitir = true;
+
+        if (historiaCoroutine != null)
+        {
+            StopCoroutine(historiaCoroutine);
+        }
+
+        CargarEscena(); 
     }
 
     IEnumerator ReproducirHistoria()
     {
         foreach (string frase in frases)
         {
+            if (omitir) yield break;
+
             yield return StartCoroutine(EscribirFrase(frase));
+
+            if (omitir) yield break;
+
             yield return new WaitForSeconds(pausaEntreFrases);
             textoUI.text = "";
         }
 
-        SceneManager.LoadScene(siguienteEscena);
+        CargarEscena(); 
     }
 
     IEnumerator EscribirFrase(string frase)
@@ -41,6 +64,8 @@ public class IntroHistoria : MonoBehaviour
 
         foreach (char letra in frase)
         {
+            if (omitir) yield break;
+
             textoUI.text += letra;
 
             if (audioSource != null && sonidoTecla != null)
@@ -50,5 +75,10 @@ public class IntroHistoria : MonoBehaviour
 
             yield return new WaitForSeconds(velocidadTyping);
         }
+    }
+
+    void CargarEscena()
+    {
+        SceneManager.LoadScene(siguienteEscena);
     }
 }
