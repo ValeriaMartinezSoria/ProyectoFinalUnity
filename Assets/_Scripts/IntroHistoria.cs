@@ -16,17 +16,19 @@ public class IntroHistoria : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip sonidoTecla;
 
-    public string siguienteEscena = "All";
+    public string siguienteEscena = "Controles"; 
 
     private Coroutine historiaCoroutine;
     private bool omitir = false;
 
     void Start()
     {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+
         historiaCoroutine = StartCoroutine(ReproducirHistoria());
     }
 
-  
     public void Omitir()
     {
         omitir = true;
@@ -36,7 +38,7 @@ public class IntroHistoria : MonoBehaviour
             StopCoroutine(historiaCoroutine);
         }
 
-        CargarEscena();
+        CargarEscena(); 
     }
 
     IEnumerator ReproducirHistoria()
@@ -53,7 +55,7 @@ public class IntroHistoria : MonoBehaviour
             textoUI.text = "";
         }
 
-        CargarEscena();
+        CargarEscena(); 
     }
 
     IEnumerator EscribirFrase(string frase)
