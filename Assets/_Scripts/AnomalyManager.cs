@@ -16,7 +16,7 @@ public class AnomalyManager : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip doorOpenSound;
 
-    public MensajeMisiones mensajeMision2;
+    public MensajeMisionCafe mensajeMision2;
 
     private int currentAnomalies = 0;
 

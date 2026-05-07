@@ -16,7 +16,8 @@ public class CodeLock3D : MonoBehaviour
     public AudioClip buttonSound;
     public AudioClip correctSound;
     public AudioClip wrongSound;
-    
+
+    public MensajeMisionColiseo mensajeAlDesbloquear;
 
     public void PressButton(string value)
     {
@@ -85,6 +86,11 @@ public class CodeLock3D : MonoBehaviour
         if (esAbrirOficina && OrganizeOfficeManager.Instance != null)
         {
             OrganizeOfficeManager.Instance.MostrarTextoPuzzle();
+        }
+
+        if (mensajeAlDesbloquear != null)
+        {
+            mensajeAlDesbloquear.Mostrar();
         }
     }
 }

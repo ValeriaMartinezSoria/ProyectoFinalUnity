@@ -2,13 +2,13 @@ using UnityEngine;
 using System.Collections;
 using TMPro;
 
-public class MensajeMisiones : MonoBehaviour
+public class MensajeMisionColiseo : MonoBehaviour
 {
 
     public TextMeshProUGUI texto;
 
     public string mensaje =
-        "> EL CANDADO SE HA DESBLOQUEADO\n> RESUELVE EL ACERTIJO";
+        "> VE A LA SALA DE ESTUDIO\n> RESUELVE EL ACERTIJO";
 
     public float typingSpeed = 0.08f;
     public float duracionEnPantalla = 5f;

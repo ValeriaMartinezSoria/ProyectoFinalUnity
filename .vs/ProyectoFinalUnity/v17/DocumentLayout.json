@@ -3,7 +3,31 @@
   "WorkspaceRootPath": "C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{07F6FB39-BD81-1115-7170-9C7D207ADE6C}|Assembly-CSharp.csproj|c:\\users\\beca\\documents\\upb\\ide\\unity\\proyectofinalunity\\assets\\_scripts\\clue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{07F6FB39-BD81-1115-7170-9C7D207ADE6C}|Assembly-CSharp.csproj|c:\\users\\beca\\documents\\upb\\ide\\unity\\proyectofinalunity\\assets\\_scripts\\codelock3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07F6FB39-BD81-1115-7170-9C7D207ADE6C}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\codelock3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07F6FB39-BD81-1115-7170-9C7D207ADE6C}|Assembly-CSharp.csproj|C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\assets\\_scripts\\juegoupb\\memorygame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07F6FB39-BD81-1115-7170-9C7D207ADE6C}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\juegoupb\\memorygame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07F6FB39-BD81-1115-7170-9C7D207ADE6C}|Assembly-CSharp.csproj|C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\assets\\_scripts\\anomalymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07F6FB39-BD81-1115-7170-9C7D207ADE6C}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\anomalymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07F6FB39-BD81-1115-7170-9C7D207ADE6C}|Assembly-CSharp.csproj|C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\assets\\_scripts\\juegoupb\\memorygametrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07F6FB39-BD81-1115-7170-9C7D207ADE6C}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\juegoupb\\memorygametrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07F6FB39-BD81-1115-7170-9C7D207ADE6C}|Assembly-CSharp.csproj|C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\assets\\_scripts\\juegoupb\\memoryletter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07F6FB39-BD81-1115-7170-9C7D207ADE6C}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\juegoupb\\memoryletter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07F6FB39-BD81-1115-7170-9C7D207ADE6C}|Assembly-CSharp.csproj|C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\assets\\_scripts\\cablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07F6FB39-BD81-1115-7170-9C7D207ADE6C}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\cablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07F6FB39-BD81-1115-7170-9C7D207ADE6C}|Assembly-CSharp.csproj|C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\assets\\_scripts\\clue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{07F6FB39-BD81-1115-7170-9C7D207ADE6C}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\clue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,56 +35,48 @@
       "RelativeMoniker": "D:0:0:{07F6FB39-BD81-1115-7170-9C7D207ADE6C}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\escritoriointeractivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07F6FB39-BD81-1115-7170-9C7D207ADE6C}|Assembly-CSharp.csproj|C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\assets\\_scripts\\codelock3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07F6FB39-BD81-1115-7170-9C7D207ADE6C}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\codelock3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07F6FB39-BD81-1115-7170-9C7D207ADE6C}|Assembly-CSharp.csproj|C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\assets\\_scripts\\mensajemisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07F6FB39-BD81-1115-7170-9C7D207ADE6C}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\mensajemisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07F6FB39-BD81-1115-7170-9C7D207ADE6C}|Assembly-CSharp.csproj|C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\assets\\_scripts\\mensajeinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07F6FB39-BD81-1115-7170-9C7D207ADE6C}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\mensajeinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07F6FB39-BD81-1115-7170-9C7D207ADE6C}|Assembly-CSharp.csproj|C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\assets\\_scripts\\anomalymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07F6FB39-BD81-1115-7170-9C7D207ADE6C}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\anomalymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{07F6FB39-BD81-1115-7170-9C7D207ADE6C}|Assembly-CSharp.csproj|C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\assets\\_scripts\\keypadbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{07F6FB39-BD81-1115-7170-9C7D207ADE6C}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\keypadbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\assets\\_scripts\\orderletterstrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\_scripts\\orderletterstrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\OrderLettersTrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\_Scripts\\OrderLettersTrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\assets\\_scripts\\letterbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\_scripts\\letterbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\LetterButton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\_Scripts\\LetterButton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\beca\\documents\\upb\\ide\\unity\\proyectofinalunity\\assets\\_scripts\\orderlettersgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\_scripts\\orderlettersgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\OrderLettersGame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\_Scripts\\OrderLettersGame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\assets\\_scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\_scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\Player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\_Scripts\\Player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\assets\\_scripts\\focus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\_scripts\\focus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\Focus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\_Scripts\\Focus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\assets\\_scripts\\playerlook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\_scripts\\playerlook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\PlayerLook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\_Scripts\\PlayerLook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\assets\\_scripts\\pausemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\_scripts\\pausemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\Pausemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\_Scripts\\Pausemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\assets\\_scripts\\gametimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\_scripts\\gametimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\GameTimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\_Scripts\\GameTimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\MensajeMisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\_Scripts\\MensajeMisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\MensajeInicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\_Scripts\\MensajeInicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,11 +86,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
+              "Title": "MemoryGameTrigger.cs",
+              "DocumentMoniker": "C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\JuegoUPB\\MemoryGameTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\JuegoUPB\\MemoryGameTrigger.cs",
+              "ToolTip": "C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\JuegoUPB\\MemoryGameTrigger.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\JuegoUPB\\MemoryGameTrigger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T01:05:07.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MemoryLetter.cs",
+              "DocumentMoniker": "C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\JuegoUPB\\MemoryLetter.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\JuegoUPB\\MemoryLetter.cs",
+              "ToolTip": "C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\JuegoUPB\\MemoryLetter.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\JuegoUPB\\MemoryLetter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T01:03:58.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MemoryGame.cs",
+              "DocumentMoniker": "C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\JuegoUPB\\MemoryGame.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\JuegoUPB\\MemoryGame.cs",
+              "ToolTip": "C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\JuegoUPB\\MemoryGame.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\JuegoUPB\\MemoryGame.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T01:01:53.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CableManager.cs",
+              "DocumentMoniker": "C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\CableManager.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\CableManager.cs",
+              "ToolTip": "C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\CableManager.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\CableManager.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T00:20:24.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "OrderLettersTrigger.cs",
               "DocumentMoniker": "C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\OrderLettersTrigger.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\OrderLettersTrigger.cs",
@@ -86,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "LetterButton.cs",
               "DocumentMoniker": "C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\LetterButton.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\LetterButton.cs",
@@ -98,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "OrderLettersGame.cs",
               "DocumentMoniker": "C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\OrderLettersGame.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\OrderLettersGame.cs",
@@ -110,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 17,
               "Title": "MensajeMisiones.cs",
               "DocumentMoniker": "C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\MensajeMisiones.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\MensajeMisiones.cs",
@@ -122,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 18,
               "Title": "MensajeInicial.cs",
               "DocumentMoniker": "C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\MensajeInicial.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\MensajeInicial.cs",
@@ -134,19 +198,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "AnomalyManager.cs",
               "DocumentMoniker": "C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\AnomalyManager.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\AnomalyManager.cs",
               "ToolTip": "C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\AnomalyManager.cs",
               "RelativeToolTip": "Assets\\_Scripts\\AnomalyManager.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBIAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-05T19:06:22.192Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "EscritorioInteractivo.cs",
               "DocumentMoniker": "C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\EscritorioInteractivo.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\EscritorioInteractivo.cs",
@@ -158,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Pausemanager.cs",
               "DocumentMoniker": "C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\Pausemanager.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Pausemanager.cs",
@@ -170,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "GameTimer.cs",
               "DocumentMoniker": "C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\GameTimer.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\GameTimer.cs",
@@ -182,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "KeypadButton.cs",
               "DocumentMoniker": "C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\KeypadButton.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\KeypadButton.cs",
@@ -194,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Player.cs",
@@ -206,19 +270,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "CodeLock3D.cs",
               "DocumentMoniker": "C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\CodeLock3D.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\CodeLock3D.cs",
               "ToolTip": "C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\CodeLock3D.cs",
               "RelativeToolTip": "Assets\\_Scripts\\CodeLock3D.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T03:26:35.584Z"
+              "WhenOpened": "2026-05-03T03:26:35.584Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "Clue.cs",
               "DocumentMoniker": "C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\Clue.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Clue.cs",
@@ -226,12 +291,11 @@
               "RelativeToolTip": "Assets\\_Scripts\\Clue.cs",
               "ViewState": "AgIAAFIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T11:45:04.573Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-30T11:45:04.573Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Focus.cs",
               "DocumentMoniker": "C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\Focus.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Focus.cs",
@@ -243,7 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "PlayerLook.cs",
               "DocumentMoniker": "C:\\Users\\BECA\\Documents\\UPB\\IDE\\Unity\\ProyectoFinalUnity\\Assets\\_Scripts\\PlayerLook.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\PlayerLook.cs",
