@@ -27,6 +27,9 @@ public class MemoryGame : MonoBehaviour
     public AudioClip sonidoFallo;
     public AudioClip sonidoVictoria;
 
+    [Header("Al Ganar")]
+    public GameObject objetoADesaparecer;
+
     public Camera mainCamera;
     private float clickDistance = 100f;
 
@@ -209,6 +212,11 @@ public class MemoryGame : MonoBehaviour
             AudioSource.PlayClipAtPoint(sonidoVictoria, transform.position);
 
         if (textoEstado != null) textoEstado.text = mensajeVictoria;
+
+        if (objetoADesaparecer != null)
+        {
+            objetoADesaparecer.SetActive(false);
+        }
 
         Invoke(nameof(CerrarPanel), duracionMensajeVictoria);
     }

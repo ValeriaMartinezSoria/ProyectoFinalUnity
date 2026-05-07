@@ -19,6 +19,9 @@ public class CodeLock3D : MonoBehaviour
 
     public MensajeMisionColiseo mensajeAlDesbloquear;
 
+    [Header("Secuencia Final")]
+    public GameObject botonFinalAActivar;
+
     public void PressButton(string value)
     {
         if (isLocked) 
@@ -91,6 +94,11 @@ public class CodeLock3D : MonoBehaviour
         if (mensajeAlDesbloquear != null)
         {
             mensajeAlDesbloquear.Mostrar();
+        }
+
+        if (botonFinalAActivar != null)
+        {
+            botonFinalAActivar.SetActive(true);
         }
     }
 }
