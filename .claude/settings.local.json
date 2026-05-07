@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(git mergetool *)",
-      "Bash(cp _merge_temp/merged.unity Assets/_Scenes/All.unity)",
-      "Bash(rm -rf _merge_temp)"
-    ]
-  }
-}
